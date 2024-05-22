@@ -1,11 +1,10 @@
-import { Router } from 'express';
-import carsRoutes from './api/carRouter';
-import customersRoutes from './api/customerRouter'
+const router = require("express").Router();
+const UserRouter = require("./api/user");
+const AdminRouter = require("./api/makeBill");
+const CustomerRouter = require("./api/listPayment");
 
-const router = Router();
+router.use("/user", UserRouter);
+router.use("/admin", AdminRouter);
+router.use("/customer", CustomerRouter);
 
-router.use(carsRoutes);
-
-router.use(customersRoutes);
-
-export default router;
+module.exports = router;
