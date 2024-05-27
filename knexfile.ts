@@ -7,10 +7,10 @@ const config: { [key: string]: Knex.Config } = {
      client: "pg",
     connection: {
       user: "postgres",
-      password: "020402",
+      password: "kurnia03",
       port: 5432,
       host: "127.0.0.1",
-      database: "ch5_bcr"
+      database: "postgres"
     },
 
     migrations: {

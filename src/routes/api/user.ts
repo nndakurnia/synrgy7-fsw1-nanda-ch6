@@ -1,7 +1,8 @@
 const router = require("express").Router();
-import { login } from '../../controllers/carsController';
+import { register } from '../../controllers/authController';
+import { auth } from '../../middlewares/auth';
 
-router.post('/login', login);
+router.post('/register', auth, register);
 
 
 export default router;

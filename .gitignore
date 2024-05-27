@@ -1,10 +1,2 @@
-node_modules/
-src/config/
-src/controller/
-src/middleware/
-src/migrations/
-src/models/
-src/seeds/
-
+node_modules
 .gitignore
-
